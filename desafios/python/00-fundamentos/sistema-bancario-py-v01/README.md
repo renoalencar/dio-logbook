@@ -103,7 +103,7 @@ Desenvolvido como parte do desafio de programação da Digital Innovation One.
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](dio-logbook/LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
 
 ---
 
