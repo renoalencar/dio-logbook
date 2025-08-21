@@ -1,18 +1,110 @@
-## Desafio
+# 💰 Sistema Bancário em Python
 
-Você foi contratado por um grande banco para desenvolver o seu novo sistema. Esse banco deseja modernizar suas operações e para isso escolheu a linguagem Python. Para a primeira versão do sistema, você deve implementar apensas 3 operações: depósito, saque e extrato.
+Este projeto implementa um sistema bancário simples em Python com operações básicas de depósito, saque e extrato.
 
-### Operação de **Depósito**
+## 🎯 Funcionalidades Implementadas
 
-Deve ser possível depositar valores positivos para a conta bancária. A v1 do projeto trabalha apenas com 1 usuário, dessa forma não há necessidade de se preocupar em identificar qual é o número de agência e conta bancária. Todos os depósitos devem ser armazenados em uma variável e exebido na operação de extrato.
+### ✅ Operação de Depósito
+- Aceita apenas valores positivos
+- Armazena todos os depósitos para exibição no extrato
+- Atualiza o saldo da conta automaticamente
 
-### Operação de **Saque**
+### ✅ Operação de Saque
+- Limite de 3 saques diários
+- Valor máximo de R$ 500,00 por saque
+- Verificação de saldo disponível
+- Armazena todos os saques para exibição no extrato
 
-O sistema deve permitir realizar 3 saques diários com limite máximo de $R\$ 500,00$ por saque. Caso o usuário não tenha saldo em conta, o sistema deve exibir uma mensagem informando que não será possível sacar o dinheiro por falta de saldo. Todos os saques devem ser armazenados em uma vairável e exibidos na operação de extratos.
+### ✅ Operação de Extrato
+- Lista completa de todos os depósitos e saques
+- Exibe o saldo atual da conta
+- Formata os valores no padrão monetário brasileiro (R$ XXX.XX)
 
-### Operação de **Extrato**
+## 🏦 Estrutura do Projeto
 
-Essa operação deve listar todos os depósitos e saques realizados na conta. No fim da listagem, deve ser exibido o saldo atual da conta.
+```python
+# Variáveis globais
+saldo = 0
+limite = 500
+extrato = ""
+numero_saques = 0
+LIMITE_SAQUES = 3
+```
 
-Os valores devem ser exibidos utilizando o formato $R\$ XXX.XX$, exemplo:
-$1500.45 = R\$ 1500.45$
+## 🚀 Como Executar
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/renoalencar/dio-logbook.git
+```
+
+2. Navegue até o diretório:
+```bash
+cd desafios/python/00-fundamentos/sistema-bancario-py-v01
+```
+
+3. Execute o programa:
+```bash
+python sistema-bancario-py-v01.py
+```
+
+## 📋 Menu de Operações
+
+```
+=============== MENU ================
+[d] Depositar
+[s] Sacar
+[e] Extrato
+[q] Sair
+=====================================
+```
+
+## 💻 Exemplo de Uso
+
+### Depósito:
+```
+Informe o valor do depósito: 350.50
+Depósito de R$ 350.50 realizado com sucesso!
+```
+
+### Saque:
+```
+Informe o valor do saque: 200.00
+Saque de R$ 200.00 realizado com sucesso!
+```
+
+### Extrato:
+```
+=============== EXTRATO ================
+Depósito: R$ 350.50
+Saque:    R$ 200.00
+
+----------------------------------------
+Saldo:    R$ 150.50
+========================================
+```
+
+## ⚠️ Regras de Negócio Implementadas
+
+- ❌ **Saques sem saldo**: "Operação falhou! Saldo insuficiente."
+- ❌ **Saques acima do limite**: "Operação falhou! Valor excede o limite de R$ 500.00 por saque."
+- ❌ **Excesso de saques**: "Operação falhou! Número máximo de saques excedido (3 por dia)."
+- ❌ **Valores inválidos**: "Operação falhou! Valor informado é inválido."
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Python 3.x** - Linguagem de programação
+- **Estruturas de controle** - Loops e condicionais
+- **Formatação de strings** - Para exibição monetária
+
+## 👨‍💻 Autor
+
+Desenvolvido como parte do desafio de programação da Digital Innovation One.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+**💡 Observação**: Este sistema foi desenvolvido como uma versão inicial (v1) para um único usuário, sem identificação de agência e conta, conforme especificado no desafio.
