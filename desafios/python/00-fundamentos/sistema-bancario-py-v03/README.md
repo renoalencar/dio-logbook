@@ -2,7 +2,7 @@
 
 Este projeto implementa um sistema bancário completo em Python seguindo os princípios de Programação Orientada a Objetos (POO), com operações de depósito, saque, extrato, gerenciamento de clientes e contas correntes.
 
-## 🎯 Diagrama de Classes UML
+## 🎯 Diagrama de Classes
 
 ```uml
 ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
@@ -68,7 +68,7 @@ Este projeto implementa um sistema bancário completo em Python seguindo os prin
 
 ### 💰 Operações Bancárias
 - **✅ Depósito**: Valores positivos com registro no histórico
-- **✅ Saque**: Limite de 3 saques diários (R$ 500,00 cada)
+- **✅ Saque**: Limite de 3 saques diários (até R$ 500,00 cada)
 - **✅ Extrato**: Histórico completo com timestamps e saldo
 
 ### 👥 Gestão de Clientes
@@ -221,17 +221,6 @@ def buscar_conta(self, numero):  # No Banco
 - ✅ **Números de conta**: Sequenciais e únicos
 - ✅ **Agência**: Fixa "0001" para todas as contas
 
-## 🎯 Próximas Melhorias
-
-- [ ] Persistência em banco de dados
-- [ ] Interface gráfica (GUI)
-- [ ] Sistema de transferências entre contas
-- [ ] Extratos por período
-- [ ] Relatórios financeiros
-- [ ] API REST para integração
-- [ ] Sistema de autenticação
-- [ ] Contas poupança e investimento
-
 ## 👨‍💻 Autor
 
 Desenvolvido como parte do desafio de programação da Digital Innovation One.
@@ -242,4 +231,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para m
 
 ---
 
-**💡 Observação**: Este sistema foi desenvolvido como terceira versão (v1). A primeira e segunda versão podem ser acessada em [sistema-bancario-py-v01.py](/desafios/python/00-fundamentos/sistema-bancario-py-v01/) e [sistema-bancario-py-v02.py](/desafios/python/00-fundamentos/sistema-bancario-py-v02/).
+**💡 Observação**: Este sistema foi desenvolvido como terceira versão (v3). A primeira e segunda versão podem ser acessada em [sistema-bancario-py-v01.py](/desafios/python/00-fundamentos/sistema-bancario-py-v01/) e [sistema-bancario-py-v02.py](/desafios/python/00-fundamentos/sistema-bancario-py-v02/).
