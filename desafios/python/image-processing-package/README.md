@@ -234,7 +234,3 @@ Desenvolvido como parte do desafio de programação da Digital Innovation One.
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
-
----
-
-**💡 Observação**: Este sistema foi desenvolvido como proposta de desafio na plataforma DIO.
