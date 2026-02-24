@@ -1,4 +1,4 @@
-# Desafio propõe a criação de um caderno temático no NotebookLM
+# Desafio: Criação de um Caderno Temático no NotebookLM
 
 ---
 
