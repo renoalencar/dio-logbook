@@ -1,8 +1,5 @@
 # Repositório de Agentes Copilot
 
-> **"Agentes não são ferramentas. São extensões cognitivas do operador."**  
-> — *Dra. Lara Cruz, Diretora Técnica, Cyber Sans Corp*
-
 ---
 
 ## 📋 Visão Geral
