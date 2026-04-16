@@ -170,7 +170,7 @@ PORT   STATE SERVICE VERSION
 21/tcp open  ftp     vsftpd 2.3.4
 ```
 
-<figure align="center">
+<figure style="text-align: center;">
   <img src="images/lab-sec-01-fase-reconhecimento.png" alt="Fase de reconhecimento NMAP">
   <figcaption><b>Figura 01.</b> Fase de reconhecimento de serviços utilizando NMAP.</figcaption>
 </figure>
@@ -235,7 +235,7 @@ medusa -h 10.10.10.20 \
 ACCOUNT FOUND: [ftp] Host: 10.10.10.20 User: msfadmin Password: msfadmin [SUCCESS]
 ```
 
-<figure align="center">
+<figure style="text-align: center;">
   <img src="images/lab-sec-02-ataque-ao-servico-ftp.png" alt="Ataque de exploração ao serviço FTP">
   <figcaption><b>Figura 02.</b> Fase de execução de ataque ao serviço FTP.</figcaption>
 </figure>
@@ -272,7 +272,7 @@ http://10.10.10.20/dvwa
 
 Antes de realizar qualquer ataque, precisamos entender como o formulário funciona. Inspecione manualmente com o devtools, recurso do navegador, a partir da seção network do mesmo:
 
-<figure align="center">
+<figure style="text-align: center;">
   <img src="images/lab-sec-03-inspecionando-pagina-login-dvwa.png" alt="Inspeção de requisições na página de login do DVWA">
   <figcaption><b>Figura 03.</b> Inspeção de requisições.</figcaption>
 </figure>
@@ -295,7 +295,7 @@ medusa -h 10.10.10.20 \
        -t 6 \
 ```
 
-<figure align="center">
+<figure style="text-align: center;">
   <img src="images/lab-sec-04-ataque-ao-dvwa-com-medusa.png" alt="Execução de ataque de força bruta com Medusa no DVWA">
   <figcaption><b>Figura 04.</b> Execução de ataque de força bruta via HTTP FORM.</figcaption>
 </figure>
@@ -330,7 +330,7 @@ user:[service] rid:[0x3f3]
 user:[user] rid:[0x3f1]
 ```
 
-<figure align="center">
+<figure style="text-align: center;">
   <img src="images/lab-sec-05-exemplo-de-uso-do-enum4linux.png" alt="Execução da ferramenta enum4linux para enumeração de SMB e serviços Windows">
   <figcaption><b>Figura 05.</b> Exemplo de uso do ENUM4LINUX.</figcaption>
 </figure>
@@ -365,7 +365,7 @@ msfadmin
 EOF
 ```
 
-<figure align="center">
+<figure style="text-align: center;">
   <img src="images/lab-sec-06-geracao-de-wordlists.png" alt="Processo de geração de wordlists customizadas para ataque de força bruta">
   <figcaption><b>Figura 06.</b> Exemplo de geração de wordlist.</figcaption>
 </figure>
@@ -380,7 +380,7 @@ medusa -h 10.10.10.20 \
        -v 4
 ```
 
-<figure align="center">
+<figure style="text-align: center;">
   <img src="images/lab-sec-07-ataque-ao-smb-com-medusa-pt01.png" alt="Primeira etapa do ataque de força bruta ao serviço SMB utilizando a ferramenta Medusa">
   <figcaption><b>Figura 07.</b> Execução de ataque ao serviço SMB.</figcaption>
 </figure>
@@ -396,7 +396,7 @@ smbclient //10.10.10.20/tmp -U msfadmin
 smbclient -L //10.10.10.20 -U msfadmin
 ```
 
-<figure align="center">
+<figure style="text-align: center;">
   <img src="images/lab-sec-08-ataque-ao-smb-com-medusa-pt02.png" alt="Sucesso e validação das credenciais obtidas no ataque ao serviço SMB com Medusa">
   <figcaption><b>Figura 08.</b> Validação do ataque ao serviço SMB.</figcaption>
 </figure>
