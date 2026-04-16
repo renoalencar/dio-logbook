@@ -496,7 +496,6 @@ Configuração: Fine-Grained Password Policy
 
 - [Documentação oficial do Medusa](http://foofus.net/goons/jmk/medusa/medusa.html)
 - [OWASP — Brute Force Attack](https://owasp.org/www-community/attacks/Brute_force_attack)
-- [DVWA — Damn Vulnerable Web Application](https://dvwa.co.uk/)
 - [Metasploitable 2 — Rapid7](https://docs.rapid7.com/metasploit/metasploitable-2/)
 - [SecLists — Daniel Miessler](https://github.com/danielmiessler/SecLists)
 - [NIST SP 800-63B — Diretrizes de Autenticação Digital](https://pages.nist.gov/800-63-3/sp800-63b.html)

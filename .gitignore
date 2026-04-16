@@ -88,6 +88,12 @@ coverage.xml
 .pytest_cache/
 cover/
 
+# Test directories (isolated)
+tests/
+test_files/
+arquivos_teste/
+*.encrypted
+
 # Translations
 *.mo
 *.pot
@@ -155,3 +161,17 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Security - NEVER commit keys or logs (CRITICAL!)
+*.key
+*.pem
+*.crt
+chave_*.key
+secret.key
+encryption_key.key
+*.encrypted
