@@ -1,0 +1,27 @@
+[submodule "projetos/dev-com-ia/dio-desafio-notebooklm"]
+	path = projetos/dev-com-ia/dio-desafio-notebooklm
+	url = https://github.com/renoalencar/dio-desafio-notebooklm.git
+[submodule "projetos/dev-com-ia/dio-meu-primeiro-copilot"]
+	path = projetos/dev-com-ia/dio-meu-primeiro-copilot
+	url = https://github.com/renoalencar/dio-meu-primeiro-copilot.git
+[submodule "projetos/laboratorio-ciberseguranca/dio-malware-simulation-python"]
+	path = projetos/laboratorio-ciberseguranca/dio-malware-simulation-python
+	url = https://github.com/renoalencar/dio-malware-simulation-python.git
+[submodule "projetos/laboratorio-ciberseguranca/dio-medusa"]
+	path = projetos/laboratorio-ciberseguranca/dio-medusa
+	url = https://github.com/renoalencar/dio-medusa.git
+[submodule "projetos/laboratorio-ciberseguranca/dio-phishing-simulation"]
+	path = projetos/laboratorio-ciberseguranca/dio-phishing-simulation
+	url = https://github.com/renoalencar/dio-phishing-simulation.git
+[submodule "projetos/python/dio-python-sistema-bancario/dio-sistema-bancario-simples"]
+	path = projetos/python/dio-python-sistema-bancario/dio-sistema-bancario-simples
+	url = https://github.com/renoalencar/dio-sistema-bancario-simples.git
+[submodule "projetos/python/dio-python-sistema-bancario/dio-sistema-bancario-poo"]
+	path = projetos/python/dio-python-sistema-bancario/dio-sistema-bancario-poo
+	url = https://github.com/renoalencar/dio-sistema-bancario-poo.git
+[submodule "projetos/python/dio-python-sistema-bancario/dio-sistema-bancario-modularizado"]
+	path = projetos/python/dio-python-sistema-bancario/dio-sistema-bancario-modularizado
+	url = https://github.com/renoalencar/dio-sistema-bancario-modularizado.git
+[submodule "projetos/python/dio-image-processing-package"]
+	path = projetos/python/dio-image-processing-package
+	url = https://github.com/renoalencar/dio-image-processing-package.git

@@ -12,58 +12,63 @@ Este repositório contém as soluções para os desafios de código e projetos p
 
 O repositório está organizado da seguinte maneira, para facilitar a navegação:
 
-```
-
+```bash
 .
-├── 📁 assets
-│
-├── 📁 desafios
-│   ├── 📁 tecnologia
-│   └── ...
-│
-│── LICENSE
-└── README.md
-
+├── 📁 assets            # Imagens e recursos visuais
+├── 📁 projetos          # ⬅️ Submódulos (links para repositórios externos)
+│   ├── 📁 ...
+├── LICENSE              # Licença do repositório
+└── README.md            # Este guia central
 ```
 
-Cada pasta de projeto ou desafio contém um `README.md` específico com mais detalhes sobre o que foi desenvolvido.
+> **Nota:** As pastas dentro de `projetos/` apontam para repositórios independentes. Ao clonar este repositório, use `git clone --recursive`.
 
----
+-----
 
-## 💻 Bootcamps e Cursos Concluídos (ou em Andamento)
+## 💻 Jornada de Aprendizado
 
-Aqui está uma lista dos bootcamps e cursos principais cujos projetos você encontrará neste repositório:
+### 🚀 Bootcamps Concluídos
 
-### Bootcamps
-- 🚀 **Suzano - Python Developer #2** - (Status: Em andamento)
-    - Introdução ao Ambientes Python e Projetos Colaborativos
-    - Sintaxe Básica com Python
-    - Trabalhando com Coleções em Python
-    - Programação Orientada a Objetos com Python
-    - Produtividade com Microsoft Copilot Studio
-    - Integrando Serviços de IA
+| Bootcamp | Foco Principal | Status |
+| :--- | :--- | :--- |
+| **Suzano - Python Developer \#2** | Programação Orientada a Objetos, Integração com IA e Copilot. | ✅ Concluído |
+| **Riachuelo - Cibersegurança** | Pentest, Linux, Malware com Python e Mitigação de ataques MitM. | ✅ Concluído |
 
-### Cursos
-- 📚 **Em construção...**
+### 🎓 Formações Específicas
 
----
+  * **Formação Cybersecurity Specialist:** Especialização em fundamentos de segurança, testes de invasão, análise de vulnerabilidades e técnicas de pós-exploração.
 
-## 🛠️ Tecnologias Utilizadas
+-----
 
-As principais tecnologias que você encontrará nos projetos deste repositório incluem:
+## 🛠️ Stack Tecnológica
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-007ACC?style=for-the-badge&logo=python&logoColor=white" />
-  <!-- <img src="https://img.shields.io/badge/C%23-5C2D91?style=for-the-badge&logo=c-sharp&logoColor=white" /> -->
-  <!-- <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /> -->
-  <!-- <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> -->
-  <!-- <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> -->
-  <!-- <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> -->
-  <!-- <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" /> -->
-  <!-- <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" /> -->
-</div>
+Abaixo, as tecnologias e ferramentas exploradas nos desafios deste repositório:
 
----
+\<div align="center"\>
+\<img src="[https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Python-3776AB%3Fstyle%3Dfor-the-badge%26logo%3Dpython%26logoColor%3Dwhite)" /\>
+\<img src="[https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)" /\>
+\<img src="[https://img.shields.io/badge/C%23-239120?style=for-the-badge\&logo=c-sharp\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/C%2523-239120%3Fstyle%3Dfor-the-badge%26logo%3Dc-sharp%26logoColor%3Dwhite)" /\>
+\<img src="[https://img.shields.io/badge/Java-ED8B00?style=for-the-badge\&logo=openjdk\&logoColor=white](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)" /\>
+\<img src="[https://img.shields.io/badge/Angular-DD0031?style=for-the-badge\&logo=angular\&logoColor=white](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)" /\>
+\<img src="[https://img.shields.io/badge/Spring\_Boot-6DB33F?style=for-the-badge\&logo=spring-boot\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Spring_Boot-6DB33F%3Fstyle%3Dfor-the-badge%26logo%3Dspring-boot%26logoColor%3Dwhite)" /\>
+<br>
+\<img src="[https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Docker-2496ED%3Fstyle%3Dfor-the-badge%26logo%3Ddocker%26logoColor%3Dwhite)" /\>
+\<img src="[https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge\&logo=kubernetes\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Kubernetes-326CE5%3Fstyle%3Dfor-the-badge%26logo%3Dkubernetes%26logoColor%3Dwhite)" /\>
+\<img src="[https://img.shields.io/badge/Shell\_Script-4EAA25?style=for-the-badge\&logo=gnu-bash\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Shell_Script-4EAA25%3Fstyle%3Dfor-the-badge%26logo%3Dgnu-bash%26logoColor%3Dwhite)" /\>
+\<img src="[https://img.shields.io/badge/Kali\_Linux-557C94?style=for-the-badge\&logo=kali-linux\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Kali_Linux-557C94%3Fstyle%3Dfor-the-badge%26logo%3Dkali-linux%26logoColor%3Dwhite)" /\>
+\</div\>
+
+-----
+
+## 🛡️ Destaques em Cibersegurança
+
+Os projetos focados em segurança incluem simulações em ambientes controlados:
+
+  * **Malware Lab:** Desenvolvimento de scripts em Python para entendimento de ameaças.
+  * **Pentesting:** Exploração de vulnerabilidades e técnicas de pós-exploração em máquinas virtuais.
+  * **Networking:** Análise e mitigação de ataques *Man-in-the-Middle* (MitM).
+
+-----
 
 ## 📫 Como me Encontrar
 
