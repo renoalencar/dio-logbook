@@ -44,19 +44,20 @@ O repositório está organizado da seguinte maneira, para facilitar a navegaçã
 
 Abaixo, as tecnologias e ferramentas exploradas nos desafios deste repositório:
 
-\<div align="center"\>
-\<img src="[https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Python-3776AB%3Fstyle%3Dfor-the-badge%26logo%3Dpython%26logoColor%3Dwhite)" /\>
-\<img src="[https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)" /\>
-\<img src="[https://img.shields.io/badge/C%23-239120?style=for-the-badge\&logo=c-sharp\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/C%2523-239120%3Fstyle%3Dfor-the-badge%26logo%3Dc-sharp%26logoColor%3Dwhite)" /\>
-\<img src="[https://img.shields.io/badge/Java-ED8B00?style=for-the-badge\&logo=openjdk\&logoColor=white](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)" /\>
-\<img src="[https://img.shields.io/badge/Angular-DD0031?style=for-the-badge\&logo=angular\&logoColor=white](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)" /\>
-\<img src="[https://img.shields.io/badge/Spring\_Boot-6DB33F?style=for-the-badge\&logo=spring-boot\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Spring_Boot-6DB33F%3Fstyle%3Dfor-the-badge%26logo%3Dspring-boot%26logoColor%3Dwhite)" /\>
-<br>
-\<img src="[https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Docker-2496ED%3Fstyle%3Dfor-the-badge%26logo%3Ddocker%26logoColor%3Dwhite)" /\>
-\<img src="[https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge\&logo=kubernetes\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Kubernetes-326CE5%3Fstyle%3Dfor-the-badge%26logo%3Dkubernetes%26logoColor%3Dwhite)" /\>
-\<img src="[https://img.shields.io/badge/Shell\_Script-4EAA25?style=for-the-badge\&logo=gnu-bash\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Shell_Script-4EAA25%3Fstyle%3Dfor-the-badge%26logo%3Dgnu-bash%26logoColor%3Dwhite)" /\>
-\<img src="[https://img.shields.io/badge/Kali\_Linux-557C94?style=for-the-badge\&logo=kali-linux\&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Kali_Linux-557C94%3Fstyle%3Dfor-the-badge%26logo%3Dkali-linux%26logoColor%3Dwhite)" /\>
-\</div\>
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <br>
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <br>
+  <img src="https://img.shields.io/badge/Shell_Script-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" />
+</div>
 
 -----
 
